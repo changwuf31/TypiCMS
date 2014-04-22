@@ -35,7 +35,7 @@ class TypiCMS
     public function languagesMenu(array $attributes = array())
     {
         $langsArray = $this->buildLangsArray(Config::get('app.locales'));
-        return HTML::languagesMenu($langsArray, $attributes);
+        return (count($langsArray) > 1) ? HTML::languagesMenu($langsArray, $attributes) : '';
     }
 
     /**
@@ -156,10 +156,10 @@ class TypiCMS
         if (Request::segment(1) == 'admin') {
             return true;
         }
-        return false; 
+        return false;
     }
 
-    
+
     /**
     * Build admin or public link
     *
