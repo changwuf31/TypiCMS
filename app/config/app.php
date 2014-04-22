@@ -60,7 +60,8 @@ return array(
 	|
 	*/
 
-	'locales' => array('fr', 'nl', 'en'),
+	//'locales' => array('fr', 'nl', 'en'),
+	'locales' => array('en'),
 	'locale' => 'en',
 
 	'modules' => array(

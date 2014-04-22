@@ -3,5 +3,8 @@ public/packages
 app/assets/components
 node_modules
 .DS_Store
+composer.lock
 .env.local.php
 app/tests/_log
+bootstrap/compiled.php
+app/config/local
